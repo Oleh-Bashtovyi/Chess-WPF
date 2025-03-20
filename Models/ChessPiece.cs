@@ -4,12 +4,8 @@ using Chess_game.Behaviour.Interfaces;
 using Chess_game.Controls;
 using Chess_game.Extensions;
 using Newtonsoft.Json;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Documents;
 
 namespace Chess_game.Models
 {
@@ -111,7 +107,6 @@ namespace Chess_game.Models
             foreach (var move in MoveCommands)
             {
                 moves.AddRange(move.Get_AvailableMoves_ForCell(cell, board));
-                //moves.AddRange(move.Get_AvailableMoves_ForAI_ForCell(cell, board));
             }
             return moves;
         }

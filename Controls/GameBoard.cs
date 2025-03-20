@@ -24,7 +24,7 @@ namespace Chess_game.Controls
         //=================================================================================================================
 
 
-        public SortedSet<IGetMovesDecorator> GetMoves_Decorators { get; set; } = new(new GetMoves_Decorator_Comparer());
+        public SortedSet<IGetMovesDecorator> GetMoves_Decorators { get; set; } = new(new GetMovesDecoratorComparer());
 
 
 

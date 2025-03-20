@@ -1,0 +1,2 @@
+## Chess Game in WPF with Design Patterns and AI Bot
+My first big project. This repository contains a WPF-based chess application that utilizes design patterns to ensure maintainability and scalability. The project implements the Decorator and Command patterns to enhance flexibility in game mechanics and user interactions. Additionally, it features a chess AI bot that allows users to play against an automated opponent.

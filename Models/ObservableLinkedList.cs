@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Chess_game.Models
 {
@@ -26,7 +22,6 @@ namespace Chess_game.Models
                 OnCollectionChanged(new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Remove, item));
 
             }
-            //if (base.Remove(item))
         }
 
         protected virtual void OnCollectionChanged(NotifyCollectionChangedEventArgs e)

@@ -6,17 +6,11 @@ using Chess_game.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Chess_game.Models
 {
     public class ChessPieceInfo_ForCreation : IChessPieceInfo_ForCreation
     {
-        //=================================================================================================================
-        // PROPERTIES
-        //=================================================================================================================
-
         #region MAIN INFO
         public byte ID { get; set;}
         public string Name { get; set; } = "Default";
@@ -115,10 +109,6 @@ namespace Chess_game.Models
         }
 
 
-
-
-
-
         public List<ICell> Get_AllCellThatUnderAtack_ByCell(ICell cell, GameBoard gameBoard, ICell? victim = null)
         {
             List<ICell> cells = new();
@@ -128,8 +118,6 @@ namespace Chess_game.Models
             }
             return cells;
         }
-
-
 
 
         public List<IMove> Get_AvailableMoves_ForMoveCommand_ForCell(IPieceMoveCommand command, ICell cell, GameBoard board)
@@ -147,7 +135,5 @@ namespace Chess_game.Models
         {
             throw new NotImplementedException();
         }
-
-
     }
 }
